@@ -20,7 +20,6 @@ coverage/
 
 # The LinkedIn export is real breached personal data and must never be committed. The sample
 # attachments are screenshots of the same profiles, so they are no more publishable than it is.
-data/
 sample/
 *.csv
 *linkedin*.txt
