@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+/**
+ * A LinkedIn-like palette, because the data is LinkedIn data and a familiar surface makes a profile
+ * easier to read. Warm grey page, white cards, the platform blue for anything actionable.
+ */
+@theme {
+  --color-ink: rgba(0, 0, 0, 0.9);
+  --color-muted: rgba(0, 0, 0, 0.6);
+  --color-faint: rgba(0, 0, 0, 0.45);
+  --color-line: rgba(0, 0, 0, 0.12);
+  --color-surface: #f4f2ee;
+  --color-card: #ffffff;
+  --color-accent: #0a66c2;
+  --color-accent-strong: #004182;
+  --color-accent-soft: #e8f0fe;
+  --color-positive: #057642;
+  --color-warning: #915907;
+  --color-negative: #b24020;
+
+  --radius-card: 0.5rem;
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+html, body, #root { height: 100%; }
+
+body {
+  background: var(--color-surface);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* The platform sets headings tighter than the browser default, which is most of its density. */
+h1, h2, h3 { letter-spacing: -0.01em; }
